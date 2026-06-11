@@ -1,0 +1,492 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
+---
+
+<Layout
+  title="NotebookLM 完全使い方ガイド｜無料・登録不要・中小企業・個人事業主・シニア向け"
+  description="NotebookLMの基本的な使い方を、専門用語を使わずに無料でまとめたガイドです。登録不要、カウントダウンなし、有料講座への誘導なし。中小企業・個人事業主・シニアの方にも分かるように解説します。"
+>
+  <header class="site-header">
+    <div class="container">
+      <a href="/" class="site-header__logo">NotebookLM 使い方ガイド</a>
+      <span class="site-header__badge">無料・登録不要</span>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero__eyebrow">完全無料ガイド</p>
+        <h1 class="hero__title">
+          NotebookLM 完全使い方ガイド<br />
+          <span style="font-weight: 400; font-size: 0.75em; color: #78716c;">中小企業・個人事業主・シニアにも分かるAI資料整理入門</span>
+        </h1>
+        <p class="hero__desc">
+          NotebookLMは、正しく使えば中小企業や個人事業主、シニアの方にも役立つ便利なAIツールです。
+          このページでは、基本的な使い方を、できるだけ専門用語を使わず、無料で読める形でまとめています。
+        </p>
+
+        <div class="promise">
+          <p class="promise__title">このガイドの方針</p>
+          <ul class="promise__list">
+            <li>完全無料</li>
+            <li>登録不要</li>
+            <li>カウントダウンなし</li>
+            <li>先着煽りなし</li>
+            <li>有料講座への誘導なし</li>
+            <li>まず自分で触って判断してください</li>
+          </ul>
+        </div>
+
+        <!-- 比較表 -->
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>項目</th>
+              <th>このガイド</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>料金</td><td>無料</td></tr>
+            <tr><td>登録</td><td>不要</td></tr>
+            <tr><td>カウントダウン</td><td>なし</td></tr>
+            <tr><td>先着煽り</td><td>なし</td></tr>
+            <tr><td>録画販売</td><td>なし</td></tr>
+            <tr><td>対象</td><td>初心者・中小企業・個人事業主・シニア</td></tr>
+            <tr><td>方針</td><td>自分で判断できるようにする</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- TOC -->
+    <div class="container">
+      <nav class="toc" aria-label="目次">
+        <p class="toc__title">目次</p>
+        <ol class="toc__list">
+          <li><a href="#what-is"><span class="toc__num">01.</span>NotebookLMとは何か</a></li>
+          <li><a href="#getting-started"><span class="toc__num">02.</span>Googleアカウントでの始め方</a></li>
+          <li><a href="#add-sources"><span class="toc__num">03.</span>資料の読み込ませ方（PDF・ドキュメント・Webページ）</a></li>
+          <li><a href="#ask-questions"><span class="toc__num">04.</span>質問の仕方</a></li>
+          <li><a href="#summarize"><span class="toc__num">05.</span>要約の作り方</a></li>
+          <li><a href="#citations"><span class="toc__num">06.</span>根拠リンクの見方</a></li>
+          <li><a href="#verify"><span class="toc__num">07.</span>間違いを見抜く方法</a></li>
+          <li><a href="#business-use"><span class="toc__num">08.</span>仕事での使い方</a></li>
+          <li><a href="#dont-input"><span class="toc__num">09.</span>入れてはいけない情報</a></li>
+          <li><a href="#vs-others"><span class="toc__num">10.</span>ChatGPT・Geminiとの違い</a></li>
+          <li><a href="#senior-tips"><span class="toc__num">11.</span>60代の親に教えたときに刺さった説明</a></li>
+        </ol>
+      </nav>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="container">
+
+        <!-- 01 -->
+        <section class="section" id="what-is">
+          <div class="section__header">
+            <span class="section__num">01</span>
+            <h2 class="section__title">NotebookLMとは何か</h2>
+          </div>
+          <p>
+            NotebookLMは、Googleが提供するAIツールです。PDFや文章、WebページをAIに読み込ませると、
+            その内容について質問したり、要約を作ったりできます。
+          </p>
+          <p>
+            ChatGPTと似ていますが、大きな違いがあります。
+            <strong>NotebookLMは、あなたが読み込ませた資料の範囲内でしか答えない</strong>という設計になっています。
+            つまり、インターネット全体から情報を持ってくるのではなく、「あなたの資料」に書いてあることだけをもとに答えます。
+          </p>
+          <p>
+            これは、議事録・契約書・補助金資料など、自分の手元にある文書を読み込ませて使うのに向いています。
+            無料プランから始められ、Googleアカウントがあればすぐに使えます。
+          </p>
+          <div class="tip">
+            <p class="tip__title">ひとことで言うと</p>
+            <p>「自分が読み込ませた資料だけを使って答えてくれるAIアシスタント」です。</p>
+          </div>
+        </section>
+
+        <!-- 02 -->
+        <section class="section" id="getting-started">
+          <div class="section__header">
+            <span class="section__num">02</span>
+            <h2 class="section__title">Googleアカウントでの始め方</h2>
+          </div>
+          <p>
+            NotebookLMはGoogleアカウントがあれば無料で使えます。アプリのインストールは不要です。
+          </p>
+          <ol class="steps">
+            <li>
+              <span class="steps__num">1</span>
+              <span>ブラウザで <strong>notebooklm.google.com</strong> を開く</span>
+            </li>
+            <li>
+              <span class="steps__num">2</span>
+              <span>Googleアカウントでログイン（Gmailと同じアカウントでよい）</span>
+            </li>
+            <li>
+              <span class="steps__num">3</span>
+              <span>「新しいノートブック」をクリック</span>
+            </li>
+            <li>
+              <span class="steps__num">4</span>
+              <span>資料（PDF・ドキュメントなど）を追加する</span>
+            </li>
+            <li>
+              <span class="steps__num">5</span>
+              <span>チャット欄に質問を入力して送信</span>
+            </li>
+          </ol>
+          <div class="tip">
+            <p class="tip__title">ノートブックとは</p>
+            <p>
+              ノートブックは「仕事ごとのフォルダ」のようなものです。
+              たとえば「補助金申請用」「A社との契約用」など、目的別に作っておくと管理しやすくなります。
+            </p>
+          </div>
+        </section>
+
+        <!-- 03 -->
+        <section class="section" id="add-sources">
+          <div class="section__header">
+            <span class="section__num">03</span>
+            <h2 class="section__title">資料の読み込ませ方</h2>
+          </div>
+          <p>
+            NotebookLMには以下の形式の資料を読み込ませることができます。
+          </p>
+          <div class="source-types">
+            <div class="source-types__item">
+              <strong>PDFファイル</strong> — 契約書、補助金要項、マニュアル、決算書など
+            </div>
+            <div class="source-types__item">
+              <strong>Googleドキュメント</strong> — Googleドライブに保存してある文書
+            </div>
+            <div class="source-types__item">
+              <strong>Googleスライド</strong> — プレゼン資料
+            </div>
+            <div class="source-types__item">
+              <strong>Webページ（URL）</strong> — 公開されているWebページのURL
+            </div>
+            <div class="source-types__item">
+              <strong>テキスト貼り付け</strong> — コピーして直接貼り付けることも可能
+            </div>
+            <div class="source-types__item">
+              <strong>YouTubeの動画</strong> — 動画のURLを入れると字幕から読み取る（字幕がある動画のみ）
+            </div>
+          </div>
+          <p>
+            追加は「ソースを追加」ボタンから行います。1つのノートブックに複数の資料を入れることができます。
+            たとえば「契約書A」「見積書B」「仕様書C」を同時に読み込ませて、まとめて質問することが可能です。
+          </p>
+        </section>
+
+        <!-- 04 -->
+        <section class="section" id="ask-questions">
+          <div class="section__header">
+            <span class="section__num">04</span>
+            <h2 class="section__title">質問の仕方</h2>
+          </div>
+          <p>
+            チャット欄に自然な日本語で質問を入力します。難しい命令文は不要です。
+          </p>
+          <div class="tip">
+            <p class="tip__title">効果的な質問の例</p>
+            <ul>
+              <li>「この資料の要点を5つ教えてください」</li>
+              <li>「第3条に書いてあることを分かりやすく説明してください」</li>
+              <li>「この補助金の申請条件は何ですか？」</li>
+              <li>「売上の前年比はどのくらいですか？」</li>
+              <li>「この契約で注意すべきリスクはありますか？」</li>
+            </ul>
+          </div>
+          <p>
+            読み込んだ資料に書いていないことは、NotebookLMは答えません。
+            「資料には記載されていません」と教えてくれます。
+            これは欠点ではなく、<strong>「でたらめを言わない」という安全機能</strong>です。
+          </p>
+        </section>
+
+        <!-- 05 -->
+        <section class="section" id="summarize">
+          <div class="section__header">
+            <span class="section__num">05</span>
+            <h2 class="section__title">要約の作り方</h2>
+          </div>
+          <p>
+            資料を読み込ませた後、チャットに「要約してください」と打つだけで要約が生成されます。
+          </p>
+          <p>
+            さらに細かく指定することも可能です。
+          </p>
+          <div class="tip">
+            <p class="tip__title">要約の指定例</p>
+            <ul>
+              <li>「3行で要約してください」</li>
+              <li>「箇条書きで5点にまとめてください」</li>
+              <li>「専門用語を使わずに要約してください」</li>
+              <li>「社内報告用に要約してください」</li>
+              <li>「この会議の決定事項だけをまとめてください」</li>
+            </ul>
+          </div>
+          <p>
+            また、画面左側の「ノートブックガイド」ボタンから、学習ガイドや
+            FAQ、目次などを自動生成することもできます。
+          </p>
+        </section>
+
+        <!-- 06 -->
+        <section class="section" id="citations">
+          <div class="section__header">
+            <span class="section__num">06</span>
+            <h2 class="section__title">根拠リンクの見方</h2>
+          </div>
+          <p>
+            NotebookLMの回答には、<strong>どの資料のどの部分から情報を取ったか</strong>を示す番号（引用）が付いています。
+            この番号をクリックすると、資料の該当箇所が表示されます。
+          </p>
+          <p>
+            これにより、「本当にそう書いてあるのか」を自分の目で確認できます。
+            AIの回答をそのまま信じるのではなく、<strong>必ず元の資料で確認する習慣</strong>をつけることが重要です。
+          </p>
+          <div class="tip">
+            <p class="tip__title">引用を使いこなすポイント</p>
+            <ul>
+              <li>回答の横に表示される番号（例：[1]）をクリックする</li>
+              <li>元の文書が右側のパネルに開いて、該当箇所がハイライトされる</li>
+              <li>重要な判断をする前に、必ず原文を確認する</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 07 -->
+        <section class="section" id="verify">
+          <div class="section__header">
+            <span class="section__num">07</span>
+            <h2 class="section__title">間違いを見抜く方法</h2>
+          </div>
+          <p>
+            NotebookLMは非常に優秀ですが、間違いがゼロではありません。
+            特に、数字の読み取り、複数の資料にまたがる情報の統合、文脈が複雑な資料では誤りが生じることがあります。
+          </p>
+          <div class="warning">
+            <p class="warning__title">⚠ 注意が必要な場面</p>
+            <ul>
+              <li>金額・日付・数量などの数字が含まれる回答</li>
+              <li>法的な判断に関わる内容（契約、規約、法律）</li>
+              <li>手書きや読み取りにくいPDFから生成された回答</li>
+              <li>複数の資料を組み合わせて答えた場合</li>
+            </ul>
+          </div>
+          <p>
+            <strong>間違いを見抜くための原則：</strong>重要な決断に使う情報は、引用番号をたどって元の文書で確認してください。
+            NotebookLMは「調べる時間を短縮するツール」であり、「最終判断を任せるツール」ではありません。
+          </p>
+        </section>
+
+        <!-- 08 -->
+        <section class="section" id="business-use">
+          <div class="section__header">
+            <span class="section__num">08</span>
+            <h2 class="section__title">仕事での使い方</h2>
+          </div>
+          <p>
+            中小企業・個人事業主の現場で特に役立つ使い方を紹介します。
+          </p>
+          <div class="usecases">
+            <div class="usecase">
+              <p class="usecase__title">📋 議事録・会議メモ</p>
+              <p>会議の録音を文字起こしして読み込ませると、「決定事項だけまとめて」「担当者と期限を一覧にして」などの質問ができます。</p>
+            </div>
+            <div class="usecase">
+              <p class="usecase__title">📄 契約書・規約のチェック</p>
+              <p>「この契約の解約条件は何ですか？」「注意すべき条項はどこですか？」と質問できます。ただし最終確認は専門家に。</p>
+            </div>
+            <div class="usecase">
+              <p class="usecase__title">📘 社内マニュアル・規程</p>
+              <p>分厚いマニュアルを読み込ませて「〇〇の手順を教えて」と質問すれば、全体を読まずに必要な情報を探せます。</p>
+            </div>
+            <div class="usecase">
+              <p class="usecase__title">💰 補助金・助成金の要項</p>
+              <p>補助金の要項PDFを読み込ませると「対象経費は何ですか？」「締め切りはいつですか？」をすぐに確認できます。</p>
+            </div>
+            <div class="usecase">
+              <p class="usecase__title">📊 決算書・財務資料</p>
+              <p>「売上高の前年比は？」「粗利率はどのくらい？」など、決算書の数字を自然な言葉で質問できます。</p>
+            </div>
+            <div class="usecase">
+              <p class="usecase__title">📧 提案書・報告書の作成補助</p>
+              <p>複数の資料から情報を引き出し、「この内容を3段落にまとめて」と依頼することで、文書作成の下書きに使えます。</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 09 -->
+        <section class="section" id="dont-input">
+          <div class="section__header">
+            <span class="section__num">09</span>
+            <h2 class="section__title">入れてはいけない情報</h2>
+          </div>
+          <p>
+            NotebookLMはGoogleのサーバーにデータを送信します。以下の情報は読み込ませないようにしてください。
+          </p>
+          <div class="warning">
+            <p class="warning__title">⚠ 読み込ませてはいけないもの</p>
+            <ul>
+              <li>個人情報（氏名・住所・マイナンバー・生年月日など）が含まれる資料</li>
+              <li>従業員・顧客の個人情報</li>
+              <li>未公開の経営情報・M&amp;A関連書類</li>
+              <li>取引先との秘密保持契約（NDA）の対象になっている資料</li>
+              <li>医療・健康に関する個人情報</li>
+              <li>パスワード・認証情報が含まれる文書</li>
+            </ul>
+          </div>
+          <p>
+            機密性の低い資料、すでに公開されている情報、自分が書いた資料などは問題なく使えます。
+            迷ったら「社外に見せても問題ない資料かどうか」を判断基準にしてください。
+          </p>
+          <div class="tip">
+            <p class="tip__title">法人利用の場合</p>
+            <p>
+              Google Workspace（有料版）でNotebookLMを使う場合、データの取り扱い条件が変わります。
+              会社の規模や業種によっては、情報システム部門や法務部門に確認してから使うことをお勧めします。
+            </p>
+          </div>
+        </section>
+
+        <!-- 10 -->
+        <section class="section" id="vs-others">
+          <div class="section__header">
+            <span class="section__num">10</span>
+            <h2 class="section__title">ChatGPT・Geminiとの違い</h2>
+          </div>
+          <p>
+            三者の特徴を比較します。目的に応じて使い分けるのがよいです。
+          </p>
+          <div style="overflow-x: auto;">
+            <table class="compare-table">
+              <thead>
+                <tr>
+                  <th>特徴</th>
+                  <th>NotebookLM</th>
+                  <th>ChatGPT</th>
+                  <th>Gemini</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>情報の範囲</td>
+                  <td>読み込んだ資料のみ</td>
+                  <td>学習データ全体</td>
+                  <td>学習データ＋Web検索</td>
+                </tr>
+                <tr>
+                  <td>根拠の確認</td>
+                  <td>引用元を表示できる</td>
+                  <td>表示できない</td>
+                  <td>限定的</td>
+                </tr>
+                <tr>
+                  <td>でたらめを言う可能性</td>
+                  <td>低い（資料外は答えない）</td>
+                  <td>高め（自信を持って間違う）</td>
+                  <td>中程度</td>
+                </tr>
+                <tr>
+                  <td>自分の資料を使う作業</td>
+                  <td>得意</td>
+                  <td>貼り付ければ可能だが煩雑</td>
+                  <td>Googleドライブと連携</td>
+                </tr>
+                <tr>
+                  <td>一般的な知識</td>
+                  <td>弱い（資料に書いてなければ答えない）</td>
+                  <td>強い</td>
+                  <td>強い</td>
+                </tr>
+                <tr>
+                  <td>日本語対応</td>
+                  <td>良好</td>
+                  <td>良好</td>
+                  <td>良好</td>
+                </tr>
+                <tr>
+                  <td>無料プラン</td>
+                  <td>あり</td>
+                  <td>あり（制限あり）</td>
+                  <td>あり</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            <strong>NotebookLMを選ぶべき場面：</strong>手元の資料を正確に読み解きたい、根拠を確認しながら使いたい、間違いのリスクを減らしたい場合です。
+          </p>
+          <p>
+            <strong>ChatGPT・Geminiが向いている場面：</strong>文章を一から書いてもらいたい、一般的な知識を調べたい、プログラムを書いてもらいたい場合です。
+          </p>
+        </section>
+
+        <!-- 11 -->
+        <section class="section" id="senior-tips">
+          <div class="section__header">
+            <span class="section__num">11</span>
+            <h2 class="section__title">60代の親に教えたときに刺さった説明</h2>
+          </div>
+          <p>
+            AIツールの説明を60代後半の親にしたところ、いくつかの説明が特に伝わりやすかったのでまとめます。
+          </p>
+
+          <h3 style="font-size: 1rem; margin: 1.5rem 0 0.5rem; font-weight: 700;">「賢い読書アシスタント」のたとえ</h3>
+          <blockquote class="quote">
+            「NotebookLMは、本を代わりに読んでくれて、後で質問に答えてくれる人みたいなもの。
+            あなたの本棚の本の範囲でしか答えないから、でたらめを言わない。」
+          </blockquote>
+
+          <h3 style="font-size: 1rem; margin: 1.5rem 0 0.5rem; font-weight: 700;">「嘘をつかないAI」の説明</h3>
+          <blockquote class="quote">
+            「ChatGPTは知ったかぶりをすることがある。NotebookLMは"この資料には書いてありません"と
+            正直に言ってくれるから、それだけ信頼しやすい。」
+          </blockquote>
+
+          <h3 style="font-size: 1rem; margin: 1.5rem 0 0.5rem; font-weight: 700;">最初の一歩の提案</h3>
+          <p>
+            最初は難しく考えず、自分がよく読む文書（例：自治会の議事録、かかりつけ医からの説明資料）を一枚だけ読み込ませて、
+            「これを3行で要約して」と試してみてください。
+            うまくいったら、少しずつ使う場面を広げていくのがよいです。
+          </p>
+
+          <div class="tip">
+            <p class="tip__title">うまくいったポイント</p>
+            <ul>
+              <li>最初から全機能を説明しない（要約・質問の2つだけに絞る）</li>
+              <li>「失敗しても何も壊れない」ことを伝える</li>
+              <li>本人が使いたい資料で最初の体験をさせる</li>
+              <li>引用リンクを見せて「ここからとってきてるんだよ」と示す</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Footer note -->
+        <div style="border-top: 1px solid var(--color-border); padding-top: 2rem; margin-top: 1rem;">
+          <p style="font-size: 0.875rem; color: var(--color-text-muted);">
+            このガイドは無料で公開しています。商用講座ではありません。<br />
+            内容に誤りがあれば修正します。NotebookLMの機能はGoogleによって随時更新されるため、実際の画面と異なる場合があります。
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>NotebookLM 使い方ガイド — 無料・登録不要</p>
+      <p>© 2026 — このガイドは自由に共有してください</p>
+    </div>
+  </footer>
+</Layout>
